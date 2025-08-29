@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Itinerary - Travel Buddy India</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header (matches other pages) -->
+  <header>
+        <nav>
+             <a href="index.html">Home</a>
+             <a href="destinations.html">Destinations</a>
+             <a href="itinerary.html">Itinerary</a>
+             <a href="booking.html">Booking</a>
+             <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+  <!-- Main Itinerary Section -->
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Our Top Destinations</h1>
+
+      <div class="cards">
+        <!-- Day 1 - Goa -->
+        <article class="card">
+          <div class="card-content">
+            <h3>Goa -3days</h3>
+            <p>Enjoy Goa’s sun-kissed coastline, lively beach shacks and water-sport activities. Great for relaxation by day and vibrant nightlife by night.</p>
+            <ul>
+              <li>Morning: Baga/Calangute beaches & water sports</li>
+              <li>Afternoon: Aguada Fort & seaside walk</li>
+              <li>Evening: Local seafood dinner and beach market</li>
+            </ul>
+            <p>Total price for this place/per person: Rs.7500</p>
+            <p><strong>Special Destinations:</strong> Baga Beach, Aguada Fort, Dudhsagar Falls</p>
+          </div>
+        </article>
+
+        <!-- Day 2 - Jaipur -->
+        <article class="card">
+          <div class="card-content">
+            <h3>Jaipur (Rajasthan) -4days</h3>
+            <p>Step into the royal past — palaces, forts, and bustling bazaars that showcase Rajasthan’s unique heritage and crafts.</p>
+            <ul>
+              <li>Morning: Hawa Mahal & City Palace</li>
+              <li>Afternoon: Amber Fort (elephant/jeep approach)</li>
+              <li>Evening: Handicraft markets and traditional Rajasthani meal</li>
+            </ul>
+            <p>Total price for this place/per person: Rs.8400</p>
+            <p><strong>Special Destinations:</strong> Hawa Mahal, Amber Fort, City Palace</p>
+          </div>
+        </article>
+
+        <!-- Day 3 - Kerala -->
+        <article class="card">
+          <div class="card-content">
+            <h3>Kerala -5days</h3>
+            <p>Slow down with lush hills, tea gardens and serene backwaters — perfect for a houseboat experience and spice-market strolls.</p>
+            <ul>
+              <li>Morning: Board a houseboat in Alleppey</li>
+              <li>Afternoon: Munnar tea plantation visit</li>
+              <li>Evening: Ayurveda massage or local spice market</li>
+            </ul>
+            <p>Total price for this place/per person: Rs.10,000</p>
+            <p><strong>Special Destinations:</strong> Alleppey Backwaters, Munnar Hills, Kovalam Beach</p>
+          </div>
+        </article>
+
+        <!-- Day 4 - Delhi -->
+        <article class="card">
+          <div class="card-content">
+            <h3>Delhi -3days</h3>
+            <p>Explore India’s capital: a mix of imperial monuments, busy bazaars and modern urban life — ideal for history, food and shopping.</p>
+            <ul>
+              <li>Morning: Red Fort & Chandni Chowk (street food walk)</li>
+              <li>Afternoon: Qutub Minar & Lotus Temple</li>
+              <li>Evening: India Gate and Connaught Place / malls</li>
+            </ul>
+            <p>Total price for this place/per person: Rs.6100</p>
+            <p><strong>Special Destinations:</strong> Red Fort, Qutub Minar, India Gate</p>
+          </div>
+        </article>
+
+        <!-- Day 5 - Himachal Pradesh -->
+        <article class="card">
+          <div class="card-content">
+            <h3>Himachal Pradesh -5days</h3>
+            <p>Breathe the mountain air — scenic hill stations, snow activities (seasonal) and peaceful ridge walks make this unforgettable.</p>
+            <ul>
+              <li>Morning: Shimla Mall Road & Ridge or Kufri (snow activities)</li>
+              <li>Afternoon: Travel to/around Manali — Hidimba Temple, Old Manali</li>
+              <li>Evening: Local food and relax at mountain cafes</li>
+            </ul>
+            <p>Total price for this place/per person: Rs.9600</p>
+            <p><strong>Special Destinations:</strong> Shimla, Manali, Rohtang Pass / Solang Valley</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer (matches other pages) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Travel Buddy – Explore Incredible India</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

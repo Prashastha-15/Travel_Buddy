@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Travel Buddy India</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Small form/table styling to keep this file self-contained and neat */
+    .page {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 16px;
+    }
+    h1 { margin-bottom: 6px; }
+    h2 { color: #ff6f61; margin-top: 10px; }
+
+    table.form-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    table.form-table td { padding: 14px 16px; vertical-align: middle; }
+    table.form-table tr:nth-child(odd) { background: #fbfbfb; }
+
+    label { display:block; font-weight:700; color:#222; margin-bottom:6px; }
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+      width:100%;
+      padding:10px 12px;
+      border:1px solid #dcdcdc;
+      border-radius:6px;
+      font-size:14px;
+    }
+    textarea { resize:vertical; min-height:100px; }
+
+    .btn {
+      background:#ff4d6d; color:#fff; padding:10px 18px; border-radius:24px;
+      border:none; cursor:pointer; font-weight:700;
+    }
+
+    .contact-block {
+      margin-top:18px;
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      align-items:flex-start;
+    }
+    .contact-card {
+      background:#fff; padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06);
+      min-width:240px;
+    }
+    .contact-card h3 { margin:0 0 8px 0; color:#222; }
+    .contact-card a { color:#ff4d6d; font-weight:700; text-decoration:none; }
+    .contact-card p { margin:6px 0 0 0; color:#444; font-size:14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="page">
+      <h1>🌍 Travel Buddy India</h1>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="destinations.html">Destinations</a> |
+        <a href="itinerary.html">Itinerary</a> |
+        <a href="booking.html">Booking</a> |
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2>We’d Love to Hear From You</h2>
+
+    <form action="#" method="post" aria-label="Contact form">
+      <table class="form-table" role="presentation">
+        <tr>
+          <td style="width:32%">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required />
+          </td>
+          <td>
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="phone">Mobile Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="+91-XXXXXXXXXX" />
+          </td>
+          <td>
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Booking Help / Complaint / Other" />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <label for="message">Message / Query</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td style="text-align:right; padding-bottom:20px;">
+            <button class="btn" type="submit">Send Message</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <!-- Contact details (added TravelBuddy email, phone and address) -->
+     
+    <div class="contact-block" aria-hidden="false">
+      <div class="contact-card" role="region" aria-label="Contact details">
+        <h3>Customer Support</h3>
+        <p>📧 Email: <a href="mailto:support@travelbuddyindia.com">support@travelbuddyindia.com</a></p>
+        <p>📞 Phone: <a href="tel:+919876543210">+91-9876543210</a></p>
+      </div>
+
+      <div class="contact-card" role="region" aria-label="Office address">
+        <h3>Office</h3>
+        <p>🏢 Travel Buddy India</p>
+        <p>New Delhi, India</p>
+      </div>
+
+      <div class="contact-card" role="region" aria-label="Support hours">
+        <h3>Support Hours</h3>
+        <p>Mon – Sat: 09:00 — 18:00 IST</p>
+        <p>Sun: Closed (Emergency email support available)</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="page">
+      <p>© 2025 Travel Buddy India. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

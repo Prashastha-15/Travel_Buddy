@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booking - Travel Buddy India</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- header matches other pages -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Travel Buddy Home">
+        <span class="flag">🇮🇳</span>
+        <span class="brand">Travel Buddy</span>
+      </a>
+      <nav aria-label="Primary" class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="itinerary.html" class="nav-link">Itinerary</a>
+        <a href="booking.html" class="nav-link active">Booking</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Trip Reservation</h1>
+
+      <div class="booking-container">
+        <!-- LEFT: Booking Form (table layout for alignment) -->
+        <div class="booking-form card">
+          <form action="#" method="post" aria-label="Booking form">
+            <table class="form-table" role="presentation">
+              <tr>
+                <td><label for="fullName">Full Name</label></td>
+                <td><input id="fullName" name="fullName" type="text" required /></td>
+              </tr>
+
+              <tr>
+                <td><label for="destination">Destination Selected</label></td>
+                <td>
+                  <select id="destination" name="destination" required>
+                    <option value="">-- Select destination --</option>
+                    <option>Goa</option>
+                    <option>Jaipur</option>
+                    <option>Kerala</option>
+                    <option>Delhi</option>
+                    <option>Himachal Pradesh</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="fromDate">Travel Date (From)</label></td>
+                <td><input id="fromDate" name="fromDate" type="date" required /></td>
+              </tr>
+
+              <tr>
+                <td><label for="toDate">Travel Date (To)</label></td>
+                <td><input id="toDate" name="toDate" type="date" required /></td>
+              </tr>
+
+              <tr>
+                <td><label for="members">Number of Members Traveling</label></td>
+                <td><input id="members" name="members" type="number" min="1" step="1" required /></td>
+              </tr>
+
+              <tr>
+                <td><label for="accommodation">Accommodation Type</label></td>
+                <td>
+                  <select id="accommodation" name="accommodation" required>
+                    <option value="">-- Select --</option>
+                    <option>Hotel</option>
+                    <option>Resort</option>
+                    <option>Guest House</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="travelMode">Mode of Travel</label></td>
+                <td>
+                  <select id="travelMode" name="travelMode" required>
+                    <option value="">-- Select --</option>
+                    <option>Flight</option>
+                    <option>Train</option>
+                    <option>Bus</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label>Payment Option</label></td>
+                <td>
+                  <label class="radio-inline"><input type="radio" name="payment" value="Cash" required /> Cash</label>
+                  <label class="radio-inline"><input type="radio" name="payment" value="Card" /> Card</label>
+                  <label class="radio-inline"><input type="radio" name="payment" value="UPI" /> UPI</label>
+                </td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td class="form-actions">
+                  <button class="btn" type="submit">Submit</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+
+        <!-- RIGHT: Image -->
+        <aside class="booking-image">
+          <img src="travel.jpg" alt="Travel booking visual placeholder" />
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Travel Buddy – Explore Incredible India</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
